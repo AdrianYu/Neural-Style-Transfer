@@ -298,6 +298,8 @@ def pooling_func(x):
 
 
 # get tensor representations of our images
+# todo: use CIELUV/CIELAB/CIEXYZ color space
+# todo: use wavelets/Fourier to do upscaling
 base_image = K.variable(preprocess_image(base_image_path, True, read_mode=read_mode))
 
 style_reference_images = []
